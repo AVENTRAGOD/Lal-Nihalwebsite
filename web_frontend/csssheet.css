@@ -1,0 +1,547 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scrollbar-width: none;
+}
+
+body {
+    font-family: Montserrat, Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container_one {
+    width: 100%;
+    height: 100%;
+    /* background-image: url(images/services_cover.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto 10px auto;
+}
+
+.containersub {
+    width: 100vw;
+    height: 100vh;
+}
+
+.gradient_wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39),rgba(0, 0, 0, 0.155),rgba(0, 0, 0, 0.39));
+}
+
+.navigation_bar {
+    width: 100%;
+    height: 100px;
+}
+
+.logo {
+    width: 160px;
+    height: 100px;
+    background-image: url(images/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    margin: 0 0 0 30px;
+}
+
+.navigation_button_container {
+    width: 65%;
+    height: 100px;
+    float: right;
+    margin: 0 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation_buttons {
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+}
+
+.navigation_buttons li {
+    margin: 0px 10px;
+    overflow-block: auto;
+    font-weight: 700;
+    font-size: 20px;
+    justify-items: center;
+}
+
+.text_container {
+    padding: 5px 10px;
+}
+
+.book_now {
+    background-color: red;
+    padding: 5px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.button_container {
+    text-align: center;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.button_container p {
+    padding-top: 12px;
+}
+
+.navigator {
+    text-transform: uppercase;
+    color: red;
+    font-size: 1.5rem;
+}
+
+.containerbox {
+    background-color: rgba(255, 255, 255, 0.707);
+    height: 600px;
+    width: 1230px;
+    text-align: center;
+    margin: 15px auto;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+#titlebox {
+    margin: 0 auto;
+    width: 100%;
+    height: 2rem;
+    background-color: #b4b4b4;
+}
+
+.tableContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#lefttable, #righttable {
+    width: 48%;
+    text-align: left;
+    position: relative;
+    top: -8rem;
+}
+
+.tableContainer table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableContainer th, .tableContainer td {
+    padding: 15px;
+    text-align: left;
+}
+
+.tableContainer th {
+    color: black;
+}
+
+.tableContainer input[type="text"], .tableContainer input[type="datetime-local"] {
+    width: calc(83% - 15px);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px 0;
+    background-color: #e74c3c;
+}
+
+input::placeholder {
+    color: black; /* Change this to your desired color */
+    opacity: 0.3; /* To ensure the color is fully opaque */
+}
+
+.tableContainer select {
+    width: 6rem;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px 0;
+    background-color: #e74c3c;
+    position: absolute;
+    right: 5rem;
+}
+
+.date-picker-btn {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.clear-btn {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+    /* transition: background-color 0.3s ease; */
+}
+button i {
+    margin-right: 1px;
+    color: black; /* This sets the icon color to black */
+}
+.date-container {
+    position: relative;
+    display: inline-block;
+}
+.date-input {
+    padding-right: 50px; /* Adjust to fit the icon */
+    
+}
+
+.vehicle-type {
+    width: 10rem;
+    position: relative;
+    right: 9rem;
+    margin-left: 10rem;
+}
+
+.Vehicle-text {
+    position: relative;
+    right: -6rem;
+}
+.containerbox2{
+    background-image: url(images/section_three_cover.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.whitebox{
+    background-color: rgba(255, 255, 255, 0.808);
+    height: 650px;
+    width: 1230px;
+    text-align: left;
+    margin: 10px auto;
+    /* justify-content: space-between; */
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display:flex;
+    margin: 3px 0px;
+    color: black;
+    font-size: 14px;
+}
+
+.full_service {
+    margin-left: 20px;
+    padding: 1px;
+    /* border: 1px solid rgba(255, 255, 255, 0.425);
+    background-color: rgba(255, 255, 255, 0); */
+    border-radius: 5px;
+    display: block;
+}
+
+.full_service label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Adjust the gap between each checkbox and label */
+}
+
+.full_service label input[type="checkbox"] {
+    margin-right: 10px; /* Adjust the gap between the checkbox and the text */
+    width: 15px;
+    height: 15px;
+    background-color:red;
+    position: relative;
+}
+
+.left_side{
+    padding: 0%;
+}
+
+.Engine_reapair{
+    margin-left: 20px;
+    padding: 10px;
+    /* border: 1px solid rgba(255, 255, 255, 0.425);
+    background-color: rgba(255, 255, 255, 0); */
+    border-radius: 5px;
+    display: block;
+}
+
+.Engine_reapair label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.Engine_reapair label input[type = "checkbox"]{
+    margin-right: 10px;
+}
+
+.Engine_reapair label input[type="checkbox"] {
+    margin-right: 10px; /* Adjust the gap between the checkbox and the text */
+    width: 15px;
+    height: 15px;
+    background-color:red;
+    position: relative;
+}
+
+/* .Engine_reapair label input[type="checkbox"]:checked::before {
+    content: '✓';
+    position: absolute;
+    top: -1px;
+    left: 2px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 11px;
+} */
+
+.Minor_Service{
+    margin-top: -644px;
+    margin-left: 23rem;
+    padding: 1px;
+    /* border: 1px solid rgba(255, 255, 255, 0.425);
+    background-color: rgba(255, 255, 255, 0); */
+    border-radius: 5px;
+    display: block;
+}
+
+.Minor_Service label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.Minor_Service label input[type = "checkbox"]{
+    margin-right: 10px;
+}
+
+.Minor_Service label input[type="checkbox"] {
+    margin-right: 10px; /* Adjust the gap between the checkbox and the text */
+    width: 15px;
+    height: 15px;
+    background-color:red;
+    border: 2px solid #fff;
+    /* border-radius: 50%; */
+    display: inline-block;
+    position: relative;
+}
+
+/* .Minor_Service label input[type="checkbox"]:checked::before {
+    content: '✓';
+    position: absolute;
+    top: -1px;
+    left: 2px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 11px;
+} */
+
+.T_P {
+    margin: 248px;
+    margin-left: 23rem;
+    padding: 1px;
+    /* border: 1px solid rgba(255, 255, 255, 0.425);
+    background-color: rgba(255, 255, 255, 0); */
+    border-radius: 5px;
+    display: block;
+}
+
+.T_P label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Adjust the gap between each checkbox and label */
+}
+
+.T_P label input[type="checkbox"] {
+    margin-right: 10px; /* Adjust the gap between the checkbox and the text */
+    width: 15px;
+    height: 15px;
+    background-color:red;
+    border: 2px solid #fff;
+    /* border-radius: 50%; */
+    display: inline-block;
+    position: relative;
+}
+
+/* .T_P label input[type="checkbox"]:checked::before {
+    content: '✓';
+    position: absolute;
+    top: -1px;
+    left: 2px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 11px;
+} */
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+.vertical-line {
+    border-right: 2px solid black; 
+    height: 580px; /* Set the height of the line. Adjust as needed. */
+    margin: 260px;
+    margin-top: -38rem;
+}
+
+.res_sub{
+    /* display: flex; */
+    z-index: 1;
+    justify-content: space-between;
+    width: 400px;
+    height: 80px;
+    /* background-color: #e74c3c; */
+    margin-top: 310px;
+    margin-right: 106px;
+}
+.calander{
+    background-color: blueviolet;
+    height: 250px;
+    width: 500px;
+    position: absolute;
+    bottom: -70%;
+    right: 10.5%
+}
+
+.reset_button{
+    width: 90px;
+    height: 30px;
+    margin: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.submit_button{
+    width: 90px;
+    height: 30px;
+    margin: 43px;
+    margin-bottom: 30px;
+    background-color: #e74c3c;
+    color: #000000;
+    font-weight: bold;
+    border-color: #e74c3c;
+}
+
+.title_2{
+    /* display: flex; */
+    margin-right: -186px;
+    margin-top: -57px;
+}
+
+.T_area{
+    display: flex;
+    margin-top: -1040px;
+    margin-right: 9%;
+}
+.textarea{
+    width: 25rem;
+    height: 8rem;
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color:#e74c3c;
+    resize: none;
+}
+
+.footer{
+* {
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainfContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.535);
+    display: flex;
+}
+
+footer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    font-size: 0.9rem;
+    background-image: url(images/tyre.jpg);
+    background-size: cover;
+}
+
+.fContainer {
+    width: max-content;
+    height: max-content;
+    color: white;
+    display: flex;
+}
+
+.colSection {
+    width: 33%;
+    height:fit-content;
+    padding: 25px;
+}
+
+.quickList a{
+    text-decoration: none;
+    color: white;
+}
+
+.quickList li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.iconContainer {
+    height: max-content;
+}
+
+.icon a {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    float: inline-start;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    margin: 0px 4px 0px 0px;
+}
+
+.linkimg {
+    width: 100%;
+    height:100%;
+    margin: 0px 6px 0px 0px;
+}
+
+.contactDetails {
+    padding: 10px;
+}
+
+h4 {
+    padding: 10px;
+}
+
+.holder {           /*copyright styles*/
+    width: 100%;
+    height: max-content;
+    padding:  10px 0px;
+    background-color: rgb(84, 2, 11);
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+}

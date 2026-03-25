@@ -1,0 +1,359 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scrollbar-width: none;
+}
+
+.container_one {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: darkturquoise; */
+    background-image: url(images/reviewCover.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: space-around;
+    display: flex;
+    margin: 0 auto;
+}
+
+.gradient_wrapper{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39),rgba(0, 0, 0, 0.155),rgba(0, 0, 0, 0.39));
+
+}
+
+.navigation_bar {
+    width: 100%;
+    height: 10vh;
+    /* background-color: blueviolet; */
+
+}
+
+.logo {
+    width: 160px;
+    height: 100px;
+    /* background-color: deeppink; */
+    background-image: url(images/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+    margin: 0 0 0 30px;
+}
+
+.navigation_button_container {
+    width: 65%;
+    height: 100px;
+    /* background-color: lawngreen; */
+    float: right;
+    margin: 0 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation_buttons {
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+}
+
+.navigation_buttons li {
+    margin: 0px 10px;
+    overflow-block: auto;
+    font-weight: 700;
+    font-size: 20px;
+    justify-items: center;
+}
+
+.text_container {
+    padding: 5px 10px;
+}
+
+.book_now {                     /*Booking button*/
+    background-color: red;
+    padding: 5px 10px;
+    padding-top: -10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.button_container {
+    text-align: center;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.button_container p {
+    padding-top: 12px;
+}
+
+.navigator {
+    text-transform: uppercase;
+    color: red;
+    font-size: 1.5rem;
+}
+
+.review_ground {
+    width: 95vw;
+    height: 75vh;
+    background-color: #ffffffd8;
+    margin: 1.5rem auto;
+    text-align: center;
+    margin-top: 8vh;
+}
+
+.head {
+    text-transform:uppercase;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.sectionHeaders {
+    text-transform: uppercase;
+    color: red;
+    font-size:1.3rem;
+    padding: 2rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+.main_container {
+    width: 100vw;
+    height:100vh;
+    /* background-color: blueviolet; */
+    display: flex;
+}
+
+.sectionHolders {
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(226, 220, 39); */
+    text-align: left;
+    font-size: 2rem;
+}
+
+.input-field {
+    border-radius: 0.2rem;
+    margin-left:1rem;
+    border: 0.1rem black solid;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.desc {
+    padding: 1rem;
+    padding-top: 1.5rem;
+    margin-left: 2rem;
+}
+
+table {
+    margin-left: 0.5rem;
+}
+
+.labelclass {
+    width: 10rem;
+    height: 2rem;
+}
+
+
+
+
+
+
+/* footer */
+
+.mainfContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.535);
+    display: flex;
+}
+
+footer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    font-size: 0.9rem;
+    background-image: url(images/tyre.jpg);
+    background-size: cover;
+}
+
+.fContainer {
+    width: max-content;
+    height: max-content;
+    color: white;
+    display: flex;
+}
+
+.colSection {
+    width: 33%;
+    height:fit-content;
+    padding: 25px;
+}
+
+.quickList a{
+    text-decoration: none;
+    color: white;
+}
+
+.quickList li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.iconContainer {
+    height: max-content;
+}
+
+.icon a {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    float: inline-start;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    margin: 0px 4px 0px 0px;
+}
+
+.linkimg {
+    width: 100%;
+    height:100%;
+    margin: 0px 6px 0px 0px;
+}
+
+.contactDetails {
+    padding: 10px;
+}
+
+h4 {
+    padding: 10px;
+}
+
+.holder {           /*copyright styles*/
+    width: 100%;
+    height: max-content;
+    padding:  10px 0px;
+    background-color: rgb(84, 2, 11);
+    margin: auto;
+    color: rgba(255, 255, 255, 0.45);
+    text-align: center;
+}
+
+.write {
+    /* background-color: black; */
+    width: 500px;
+    height:300px;
+    margin: 1em 2em 2em; 
+    font-size: 1rem;
+    display: flex;
+    /* border: 0.15rem solid black; */
+}
+
+form label {
+    margin-right: 1rem;
+    color: black;
+}
+
+table {
+    width: 30em;
+    margin-left: 3em;
+    border-left: red 0.2em solid;
+}
+
+.output {
+    margin: 2em 0.3em;
+}
+
+.range {
+    background-color: red;
+}
+
+table tr {
+    height: 1em;
+}
+
+table th {
+    width: 12em;
+}
+
+.text {
+    width: 100%;
+    height: 2em;
+}
+
+#feedback {
+    height: 10em;
+}
+
+.adjust {
+    padding-left: 1rem;
+}
+
+.reviewsection {
+    background-color: red;
+    width: 100%;
+    height: 5em;
+    color: black;
+    text-align: justify;
+    align-content: space-around;
+    display: flex;
+}
+
+ .reviewG {
+    width: 23rem;
+    height: 5rem;
+    background-color: yellow;
+    text-align: justify;
+    align-content: space-around;
+    float: left ;
+    display: flex;
+ }
+
+ .logoG {
+    height: 5rem;
+    width: 5rem;
+    /* background-color: white; */
+    background-image: url(images/google.png);
+    background-size: cover;
+    float: left;
+ }
+
+ .reG {
+    width: 18rem;
+    height: 5rem;
+    background-color: chartreuse;
+    align-content: space-around;
+    font-size: 1rem;
+    font-weight: 700;
+ }
+
+.submitButton {
+    padding: 0.5rem 1rem;
+    background-color: red;
+    margin: 2rem ;
+    color: #ffffff;
+    font-weight: 700;
+    float: right;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.submitButton:hover {
+    background: #000000;
+    transition: 0.5s;
+}
+

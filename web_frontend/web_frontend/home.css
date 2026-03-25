@@ -1,0 +1,578 @@
+*{
+    margin: 0 auto;
+    scrollbar-width: none;
+    font-family: 'montserrat',sans-serif;
+}
+
+.gradientOfMAinBox{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.132), rgba(0, 0, 0, 0.833));
+}
+
+.mainBox1{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: darkturquoise; */
+    /*background-image: url(1stbackground.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: space-around;
+    display: flex;
+    margin: 0 auto;
+
+    background-image: url(images/1stbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.navigation_bar {
+    width: 100%;
+    height: 10vh;
+    
+}
+
+.logo {
+    width: 160px;
+    height: 100px;
+    /* background-color: deeppink; */
+    background-image: url(images/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+    margin: 0 0 0 30px;
+}
+
+.navigation_button_container {
+    width: 65%;
+    height: 100px;
+    /* background-color: lawngreen; */
+    float: right;
+    margin: 0 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation_buttons {
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+}
+
+.navigation_buttons li {
+    margin: 0px 20px;
+    overflow-block: auto;
+    font-weight: 700;
+    font-size: 20px;
+    justify-items: center;
+}
+
+.text_container {
+    padding: 5px 5px;
+}
+
+.book_now {                     /*Booking button*/
+    background-color: red;
+    padding: 5px 10px;
+    padding-top: -10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+/*=======================================================================================*/
+
+.text{
+    margin-top: 142px;
+    margin-left: 182px;
+    width: 50vw;
+    height: 100px;
+    font-size: 170%;
+    color: white;
+}
+
+a .contactUsButton{
+    background-color: red;
+    width: 200px;
+    height: 40px;
+    margin-top: 10vh;
+    margin-left: 14.3vw;
+    color: white;
+    font-weight: bold;
+    font-size: 130%;
+    text-align: center;
+    align-content: center;
+}
+    /* padding-left: 50px; */
+    /* padding-top: 20px; */
+
+a .contactUsButton :hover{
+    background-color: rgb(164, 0, 0);
+    transition: 0.2s;
+}
+
+
+.status{
+    margin-top: 19vh;
+    float: right;
+    width: 14vw;
+    height: 5vh;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    color: white;
+    display: flex;
+    padding: 10px;
+    font-size: 4vh;
+    margin-right: 3vw;
+}
+.line{
+    background-color: white;
+    width: 2px;
+
+}
+
+/*main page2*/
+.mainBox2{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: darkturquoise; */
+    background-image: url(images/2ndbackground.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: space-around;
+    display: flex;
+    margin: 0 auto;
+    /* align-content: center; */
+    justify-content: center;
+    background-size: cover;
+    /* height: 730px; */
+}
+.gradientOf2ndBox{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.132), rgba(0, 0, 0, 0.833));
+}
+.text_OurServices{
+    margin-top: 2vh;
+    color: white;
+    font-weight: bold;
+    font-size: 400%;
+    text-align: center;
+}
+.innerWhiteBox{
+    /* margin-top: 30px; */
+    height: 75vh;
+    width: 80vw;
+    background-color: white;
+    opacity: 85%;
+    display: flex;
+}
+.leftbox{
+    margin-left: 0px;
+    width: 55%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    
+    /* background-color: rgb(55, 0, 255); */
+}
+.whiteBoxLeftIconANDtext{
+    display: flex;
+    align-content: center;
+    align-items: center;
+        /* background-color: rgb(55, 0, 255); */
+
+}
+.whiteBoxLeftIcon{
+    margin-left: 70px;
+    padding: 2vh 2vw;
+    width: 100px;
+    height: 60px;
+    /* background-color: yellow; */
+}
+.whiteBoxLefttext{
+    width: 500px;
+    /* height: 50px; */
+    /* background-color: brown;  */
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+    padding: 2vh 2vw;
+    display: flex;
+}
+.x-line{
+    width: 83%;
+    height: 2px;
+    background-color: red;
+}
+.midLine{
+    margin-left: 0px;
+    width: 3px;
+    height: 85%;
+    background-image: linear-gradient(white, red, white);
+    margin-top: 33px;
+}
+.rightBox{
+    margin-left: 0px;
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(0, 255, 42); */
+}
+.LALANDNIHAL{
+   
+    /* background-color: brown; */
+    font-size: 200%;
+    font-weight: 900;
+    /*margin-left: 150px;*/
+    margin-top: 60px;
+    text-align: center;
+}
+.AUTOWORKS{
+    /* background-color: brown; */
+    font-size: 190%;
+    /*margin-left: 150px;*/
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+.WeAlwaysText{
+    /*margin-left: 60px;*/
+    width: 400px;
+    height: 150px;
+    /* background-color: brown; */
+    font-size: 140%;
+    margin-top: 2vh;
+    font-weight: 450;
+    text-align: justify;
+}
+
+a .vIEWMOREButton :hover{
+    background-color: rgb(197, 0, 0);
+    color: white;
+
+}
+.vIEWMOREButton{
+    width: 250px;
+    height: 35px;
+    background-color: rgb(252, 29, 29);
+    color: white;
+    font-weight: bold;
+    font-size: 150%;
+    /*padding-left: 50px;*/
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 0.12em;
+}
+
+/*start of the 3rd page =============================================================*/
+.Sectionthree {
+    width: 100vw;
+    height: 100vh;
+}
+
+.text_AboutUs{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 400%;
+    text-align: center;
+}
+
+.gradient3rdpage{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+    
+}
+
+.aboutusCardHolder {
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.aboutuscard {
+    width: 25vw;
+    height: 55vh;
+    border:1px solid ;
+    margin: 0px 2.5vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /* background:linear-gradient(rgba(255, 255, 255, 0), red); */
+
+}
+
+.cardgradient::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.86));
+    z-index: 1; /* Ensures the gradient is above the image */
+}
+
+.cardgradient {
+    position: relative; /* Needed for absolute positioning of the gradient */
+    width: 100%;
+    height: 100%;
+}
+
+.cardgradient img {
+    width: 235%;
+    margin-left: -100px;
+    position: relative; /* Ensures it stays below the gradient */
+    z-index: 0;
+}
+
+.number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+}
+
+.cardtext {
+    font-size: 5.5rem;
+    line-height: 10px;
+    font-weight: 700;
+
+}
+
+.viewMoreButton{
+    width: 450px;;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.viewMoreButton:hover {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    transition: 0.4s;
+}
+/*end of the 3rd page*/
+
+/*start of the 4th page*/
+.brandsWeServe{
+    margin-top: 3vh;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 400%;
+    text-align: center;
+}
+
+.brandLogo{
+    width: 150px;
+    height: 150px;
+}
+
+.bagroundOf4thPage{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: darkturquoise; */
+    background-image: url(images/4thbackground.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: space-around;
+    display: flex;
+    margin: 0 auto;
+    /*background-image: url(4thbackground.jpg);*/
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+    /*background-repeat: no-repeat;*/
+}
+
+.logo-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    
+}
+.logo-slider {
+    display: flex;
+    gap: 30px; /* Space between logos */
+    animation: slideLeft 30s linear infinite;
+    width: 200%; 
+    height: 20vh;
+    align-items: center;
+    align-content: center;
+    /* background-color: aqua; */
+    padding-top: 4vh;
+    margin-top: 8vh;
+    /* Make sure it's twice the width for looping effect */
+}
+
+/* Pause animation when hovering */
+.logo-container:hover .logo-slider {
+    animation-play-state: paused;
+}
+
+.logo-slider img {
+    max-height: 100%; /* Adjust logo size */
+    max-width: max-content;
+    background-size: cover;
+}
+
+.logo-slider2 {
+    margin-top: 10vh;
+    display: flex;
+    gap: 30px; /* Space between logos */
+    animation: slideRight 30s linear infinite;
+    width: 200%; /* Ensure seamless looping */
+}
+
+/* Pause animation when hovering */
+.logo-container:hover .logo-slider2 {
+    animation-play-state: paused;
+}
+
+.logo-slider2 img {
+    max-height: 100px; /* Adjust logo size */
+    max-width: max-content;
+    background-size: cover;
+}
+@keyframes slideRight {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.aboutuslastsection {
+    width: 80vw;
+    height: 80vh;
+    /* background-color: #ffffff; */
+}
+
+.gradientOf4tpage{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.132), rgba(0, 0, 0, 0.833));
+}
+
+
+
+/*end of the 4th page*/
+
+/*footer*/
+* {
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainfContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.535);
+    display: flex;
+}
+
+footer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    font-size: 0.9rem;
+    background-image: url(images/tyre.jpg);
+    background-size: cover;
+}
+
+.fContainer {
+    width: max-content;
+    height: max-content;
+    color: white;
+    display: flex;
+}
+
+.colSection {
+    width: 33%;
+    height:fit-content;
+    padding: 25px;
+}
+
+.quickList a{
+    text-decoration: none;
+    color: white;
+}
+
+.quickList li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.iconContainer {
+    height: max-content;
+}
+
+.icon a {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    float: inline-start;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    margin: 0px 4px 0px 0px;
+}
+
+.linkimg {
+    width: 100%;
+    height:100%;
+    margin: 0px 6px 0px 0px;
+}
+
+.contactDetails {
+    padding: 10px;
+}
+
+h4 {
+    padding: 10px;
+}
+
+.holder {           /*copyright styles*/
+    width: 100%;
+    height: max-content;
+    padding:  10px 0px;
+    background-color: rgb(84, 2, 11);
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+
+

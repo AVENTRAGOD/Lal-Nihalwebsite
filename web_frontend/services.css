@@ -1,0 +1,443 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scrollbar-width: none;
+}
+
+.container_one {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: darkturquoise; */
+    background-image: url(images/services_cover-01.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: space-around;
+    display: flex;
+    margin: 0 auto;
+}
+
+.gradient_wrapper{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39),rgba(0, 0, 0, 0.155),rgba(0, 0, 0, 0.39));
+
+}
+
+.navigation_bar {
+    width: 100%;
+    height: 10vh;
+    /* background-color: blueviolet; */
+    /* text-transform: uppercase; */
+
+}
+
+.logo {
+    width: 160px;
+    height: 100px;
+    /* background-color: deeppink; */
+    background-image: url(images/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+    margin: 0 0 0 30px;
+}
+
+.navigation_button_container {
+    width: 65%;
+    height: 100px;
+    /* background-color: lawngreen; */
+    float: right;
+    margin: 0 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation_buttons {
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+}
+
+.navigation_buttons li {
+    margin: 0px 10px;
+    overflow-block: auto;
+    font-weight: 700;
+    font-size: 1.1rem;
+    justify-items: center;
+}
+
+.text_container {
+    padding: 5px 10px;
+    
+}
+
+.book_now {                     /*Booking button*/
+    background-color: red;
+    padding: 5px 10px;
+    padding-top: -10px;
+    /* border-radius: 0.2rem; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main_title {
+    margin: 30px auto;
+}
+
+.topic_holder {
+    width: 400px;
+    height: 100px;
+    /* background-color: coral; */
+    margin: 10% auto 1% auto;
+    text-align: center;
+    position: relative;
+    
+}
+
+.topic_holder h1 {
+    position: relative;
+    font-size: 84px;
+    color: white;
+}
+
+.service_types_container {
+    width: 95%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.484);
+    margin:0 auto 20px auto;
+    display: flex;
+    /* border: 0.2rem solid white; */
+}
+
+.service_box {
+    width: 25.5%;
+    height:100%;
+    /* background-color: blueviolet; */
+
+}
+
+.service_title{
+    width: 100%;
+    height: 20%;
+    /* background-color: rgb(255, 72, 0); */
+    text-align: center;
+    color: red;
+    text-transform: capitalize;
+}
+
+h2 {                            /*service boxes title*/
+    /* padding: 20px auto; */
+    text-align: center;
+    padding-top: 5.75%;
+    /* color: red; */
+}
+
+.paragraph_container {
+    width: 100%;
+    height: 75%;
+    /* background-color: darkblue; */
+    text-align: justify;
+}
+
+.paragraph_container p {
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem 1.2rem;
+}
+
+.seperator_line {
+    width: 0.25%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgb(255, 255, 255),rgba(0, 0, 0, 0));
+}
+/* .space_holder {
+    width: 100%;
+    height: 15px;
+} */
+
+/*Container two*/
+
+.container_two{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: darkturquoise; */
+    background-image: url(images/container2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: space-around;
+    display: flex;
+    margin: 0 auto;
+}
+
+.full_service_container {
+    width: 97vw;
+    height:90vh;
+    background-color: white;
+    margin: 30px auto;
+    display: flex;
+}
+
+.details_holder {
+    width: 35%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    float: left;
+}
+
+.main_topic {               /*main topic of the services*/
+    width: 100%;
+    height: 20%;
+    /* background-color: gold; */
+}
+
+h3 {                        /*topic style*/
+    text-align: center;
+    padding-top:30px;
+    text-transform: uppercase;
+    color: rgb(255, 28, 28);
+    font-size: 32px;
+}
+
+.scroll_services_container { /*scroll area*/
+    width: 100%;
+    height: 60%;
+    /* background-color: lime; */
+    justify-content: space-between;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.service_item_container {   /*items are in this container*/
+    width: 85%;
+    height: 20%;
+    /* background-color: darkviolet; */
+    margin: 5px auto;
+    display: flex;
+}
+
+.icon_holder {      /*icon is inside here*/
+    width:65px;
+    height: 65px;
+    
+    /* background-color: rgb(46, 139, 252); */
+}
+
+/* .icon_holder:hover{
+    transform: rotate(300deg);
+    animation: spin 20s infinite 20s; aimation test ground
+} */
+
+.icon {
+    width: 100%;
+    height: 100%;
+    background-image: 90%;
+    background-size: cover;
+}
+
+.service_holder {
+    width: 67%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+.service_holder p {
+    margin: 25px auto 20px 0;
+    font-size: 18px;
+}
+
+.gradient_between{
+    width: 90%;
+    height: 0.1rem;
+    background-color: black
+    /* background-image: linear-gradient(to right,white,red,white); */
+}
+
+.button_holder {
+    width: 100%;
+    height: 20%;
+    /* background-color: midnightblue; */
+    display: flex;
+}
+
+.button_container {  /* button is here*/
+    width: 200px;
+    height: 50px;
+    background-color: crimson;
+    margin: 20px auto;
+}
+
+.gallery_holder {
+    width: 65%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+/*Container three*/
+
+.container_three {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: darkturquoise; */
+    background-image: url(images/section_three_cover.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: space-around;
+    display: flex;
+    margin: 0 auto; 
+}
+
+.mainfContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.535);
+    display: flex;
+}
+
+footer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    font-size: 0.9rem;
+    background-image: url(images/tyre.jpg);
+    background-size: cover;
+}
+
+.fContainer {
+    width: max-content;
+    height: max-content;
+    color: white;
+    display: flex;
+}
+
+.colSection {
+    width: 33%;
+    height:fit-content;
+    padding: 25px;
+}
+
+.quickList a{
+    text-decoration: none;
+    color: white;
+}
+
+.quickList li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.iconContainer {
+    height: max-content;
+}
+
+.icon a {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    float: inline-start;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    margin: 0px 4px 0px 0px;
+}
+
+.linkimg {
+    width: 100%;
+    height:100%;
+    margin: 0px 6px 0px 0px;
+}
+
+.contactDetails {
+    padding: 10px;
+}
+
+h4 {
+    padding: 10px;
+}
+
+.holder {           /*copyright styles*/
+    width: 100%;
+    height: max-content;
+    padding:  10px 0px;
+    background-color: rgb(84, 2, 11);
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+
+
+.button_container {
+    text-align: center;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    font-size: 1.1rem;
+    /* border-radius: 3rem; */
+}
+
+.button_container p {
+    padding-top: 12px;
+}
+
+.container{
+    padding:2.3rem 0 ;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    scrollbar-width: none;
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}

@@ -1,0 +1,89 @@
+* {
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainfContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.535);
+    display: flex;
+}
+
+footer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    font-size: 0.9rem;
+    background-image: url(images/tyre.jpg);
+    background-size: cover;
+}
+
+.fContainer {
+    width: max-content;
+    height: max-content;
+    color: white;
+    display: flex;
+}
+
+.colSection {
+    width: 33%;
+    height:fit-content;
+    padding: 25px;
+}
+
+.quickList a{
+    text-decoration: none;
+    color: white;
+}
+
+.quickList li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.iconContainer {
+    height: max-content;
+}
+
+.icon a {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    float: inline-start;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    margin: 0px 4px 0px 0px;
+}
+
+.linkimg {
+    width: 100%;
+    height:100%;
+    margin: 0px 6px 0px 0px;
+}
+
+.contactDetails {
+    padding: 10px;
+}
+
+h4 {
+    padding: 10px;
+}
+
+.holder {           /*copyright styles*/
+    width: 100%;
+    height: max-content;
+    padding:  10px 0px;
+    background-color: rgb(84, 2, 11);
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/icon type">
+    <title>Login | Admin</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <span class="logo">
+
+    </span>
+    <div class="main">
+        <div class="leftside">
+            <div class="logosection">
+
+            </div>
+            <div class="slogan">Your best service provider</div>
+        </div>
+
+
+        <div class="mid"></div>
+
+
+        <div class="rightside">
+            <div class="formheader">
+                <div class="horizontalLine"></div>
+                <div class="formTitle">Login as a Admin User</div>
+            </div>
+            <div class="formbody">
+                <form action="" method="get" id="loginform">
+                    <div class="namefield">
+                        <input type="text" name="text" class="form-control" placeholder="username" id="username" required>
+
+                        <i class='bx bx-user icon' id="icon"></i>
+                    </div>
+
+                    <div class="namefield">
+                        <input type="password" name="password" class="form-control" placeholder="password" id="password" required minlength="6">
+                        <i class='bx bx-lock icon' id="icon"></i>
+                    </div>
+                    
+                        <button class="Login_button" type="submit">
+                            <a href="dashboard.html">
+                                <p>log in</p>
+                            </a>
+                        </button> 
+
+                    <p id="error-message" style="color: red;"></p>
+                    
+                    <p class="help">Problem loging in? <a href="mailto:dimithravishwajaya@gmail.com">contact</a></p>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

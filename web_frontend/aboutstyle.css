@@ -1,0 +1,286 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    background-image: url(images/about1.jpg); 
+    background-size: cover;  
+    background-position: center; 
+    color: #fff;
+    min-height: calc(100vh - 100px); 
+    text-align: center;
+    position: relative; 
+}
+
+/* Navigation Bar */
+.navigation_bar {
+    width: 100%;
+    height: 100px; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    background: rgba(43, 43, 43, 0.5); 
+}
+
+/* Logo */
+.logo {
+    width: 160px;
+    height: 100px;
+    background-image: url(images/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+    margin: 0 0 0 30px;
+}
+
+/* Navigation Buttons */
+.navigation_button_container {
+    width: 65%;
+    height: 100px;
+    float: right;
+    margin: 0 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation_buttons {
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+}
+
+.navigation_buttons li {
+    margin: 0px 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* About Content */
+.about-content {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 25px;
+    max-width: 800px; 
+    margin: auto; 
+}
+
+.about-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-content h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.about-content h2::after {
+    content: '';
+    display: block;
+    width: 50%; 
+    height: 4px; 
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.2), red, rgba(255, 0, 0, 0.2)); 
+    margin: 10px auto 0;
+    border-radius: 2px; 
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Booking Button */
+.book_now {
+    background-color: red;
+    padding: 5px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* 37 Years of Service Section */
+.years-of-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-image: url(images/repairing.jpg); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 650px; 
+    text-align: center;
+}
+
+.service-content {
+    background: rgba(56, 56, 56, 0.5); 
+    padding: 20px;
+    width: 70%;
+}
+
+.service-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.service-content h1::after {
+    content: '';
+    display: block;
+    width: 50%; 
+    height: 4px; 
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.2), red, rgba(255, 0, 0, 0.2)); 
+    margin: 10px auto 0;
+    border-radius: 2px; 
+}
+
+.service-content p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Why You Choose Us Section */
+.why-choose-us {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    padding: 50px;
+    background-image: url(images/aboutbackground.jpg); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh; 
+}
+
+.why-choose-us h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* .why-choose-us h1::after {
+    content: '';
+    display: block;
+    width: 50%; 
+    height: 4px; 
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.2), red, rgba(255, 0, 0, 0.2)); 
+    margin: 10px auto 0;
+    border-radius: 2px; 
+} */
+
+.why-choose-us p {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 900px;
+    border: 1px solid #fff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* footer */
+*{
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainfContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.535);
+    display: flex;
+}
+
+footer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    font-size: 0.9rem;
+    background-image: url(images/tyre.jpg);
+    background-size: cover;
+}
+
+.fContainer {
+    width: max-content;
+    height: max-content;
+    color: white;
+    display: flex;
+}
+
+.colSection {
+    width: 33%;
+    height:fit-content;
+    padding: 25px;
+}
+
+.quickList a{
+    text-decoration: none;
+    color: white;
+}
+
+.quickList li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.iconContainer {
+    height: max-content;
+}
+
+.icon a {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    float: inline-start;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    margin: 0px 4px 0px 0px;
+}
+
+.linkimg {
+    width: 100%;
+    height:100%;
+    margin: 0px 6px 0px 0px;
+}
+
+.contactDetails {
+    padding: 10px;
+}
+
+h4 {
+    padding: 10px;
+}
+
+.holder {           /*copyright styles*/
+    width: 100%;
+    height: max-content;
+    padding:  10px 0px;
+    background-color: rgb(84, 2, 11);
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+
+

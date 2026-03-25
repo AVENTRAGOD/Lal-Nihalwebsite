@@ -1,0 +1,166 @@
+body {
+    background-image:url(images/Bcover.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+    display: inline;
+    align-items: center;
+    scrollbar-width: none;
+    font-family: montserrat, sans-serif;
+}
+
+.logo {
+    width: 13vw;
+    height: 13vh;
+    display:block;
+    /* background: green; */
+    margin: auto;
+    background-image: url(images/Blogo.png);
+    background-size: cover;
+    aspect-ratio: 16, 9;
+}
+
+.main {
+    width: 77vw;
+    height: 76vh;
+    background: #ffffffae;
+    align-items: center;
+    margin: 2vh auto;
+    border: 0.18rem rgb(255, 77, 0) solid;
+    border-radius: 1.2rem;
+    display: flex;
+}
+
+
+
+.leftside {
+    width: 31.4vw;
+    height: 60vh;
+    margin: auto;
+}
+
+.main .logosection {
+    width: 78%;
+    height: 25vh;
+    margin: 5rem auto 3vh;
+    /* background: red; */
+    background-image: url(images/Blogo.png);
+    background-size: cover;
+}
+
+.main .slogan {
+    text-align: center;
+    font-weight: 500;
+}
+.mid {
+    height: 80%;
+    width: 1px;
+    background-color: rgb(1, 1, 1);
+}
+
+.rightside {
+    width: 31.4vw;
+    height: 60vh;
+    margin: auto;
+}
+
+.rightside .formheader {
+    width:100%;
+    height: 13vh;
+}
+.rightside .formbody {
+    width:100%;
+    height: 42vh;
+    /* background: blue; */
+}
+
+.rightside .formheader .horizontalLine {
+    width: 6vw;
+    height: 1.4vh;
+    background-color: rgb(255, 77, 0);
+    border-radius: 1rem;
+}
+
+.rightside .formheader .formTitle {
+    font-size: 1.23rem;
+    font-weight: 600;
+    padding-top: 2vh;
+}
+.rightside .formbody .namefield {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    height: 9vh;
+    border-radius: 2rem;
+    display: flex;
+    border: 2px solid rgb(123, 123, 123);
+    align-items: center;
+    margin-bottom: 6vh;
+}
+
+.rightside .formbody .namefield .icon {
+    float: right;
+    padding: 1.6vh 1.5vw;
+}
+
+.rightside .formbody .namefield input {
+    width: 90%;
+    height: 95%;
+    border-top-left-radius: 1.3rem;
+    border-bottom-left-radius: 1.3rem;
+    border: 0px;
+}
+
+.rightside .formbody .namefield,
+.rightside .formbody .namefield input {
+    background: rgb(161, 161, 161);
+}
+
+::placeholder {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    /* border-color: #ccc !important; Optional: Customize border color */
+}
+
+.Login_button {
+    width: 100%;
+    height: 9vh;
+    background-color: rgb(255, 77, 0);
+    border-radius: 2rem;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 540;
+    color: #ffffff;
+}
+
+.Login_button {
+    padding-top: 10px;
+}
+
+
+.Login_button:hover {
+    background: rgb(247, 39, 16);
+}
+
+.help {
+    font-size: 12px;
+    padding-top: 2px;
+    text-align: left;
+    padding-left: 18px;
+}
+
+.help a {
+    text-decoration: none;
+}
+
+.Login_button a{
+    text-decoration: none;
+    color: #ffffff;
+}

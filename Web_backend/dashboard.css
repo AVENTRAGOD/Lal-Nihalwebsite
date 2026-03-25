@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&family=Squada+One&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color:#E4E9F7;
+    --sidebar-color:#FFF;
+    --primary-color:#ff6a00;
+    --primary-color-light:#F6F5FF;
+    --toggle-color:#DDD;
+    --text-color:#707070;
+    --hover-text-color:#000000;
+
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;    
+}
+
+body {
+    height: 100vh;
+    background: var(--body-color) ;
+    transition: var(--tran-05);
+}
+
+body.dark {
+    --body-color:#18191A;
+    --sidebar-color:#242526;
+    --primary-color:#767676;
+    --primary-color-light:#3A3B3C;
+    --toggle-color:#DDD;
+    --text-color:#FFF;
+    --hover-text-color:#CCC;
+}
+
+/* --- sidebar --- */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background:var(--sidebar-color);
+    transition:var(--tran-05);
+    z-index:100 ;
+}
+
+.sidebar.close  {
+    justify-content: center;
+    width: 88px;
+}
+
+
+/* ===reusable css=== */
+.sidebar .text {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-color);
+    transition:var(--tran-04) ;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.sidebar.close .text{
+    opacity: 0;
+}
+
+.sidebar .image {
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li {
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 1.3 em;
+}
+
+.sidebar li .icon, 
+.sidebar li .text {
+    color: var(--text-color);
+    transition: var(--tran-02);
+}
+
+.sidebar header {
+    position: relative;
+}
+
+.sidebar .image-text img {
+    width: 40px;
+    border-radius: 6px;
+}
+
+.sidebar header .image-text {
+    display: flex;
+    align-items: center;
+}
+
+header .image-text .header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text .name {
+    font-weight: 600;
+}
+
+.header-text .profession {
+    margin-top: -2px;
+}
+
+.sidebar header .toggle {
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height:25px;
+    width: 25px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--sidebar-color);
+    font-size: 22px;
+    transition: var(--tran-03);
+}
+
+.sidebar.close header .toggle {
+    transform: translateY(-50%);
+}
+
+body.dark .sidebar header .toggle {
+    
+    color: var(--text-color);
+}
+
+.sidebar .search-box {
+    background: var(--primary-color-light);
+    border-radius: 6px;
+}
+
+.search-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+    transition: var(--tran-05);
+}
+
+.sidebar li a {
+    text-decoration: none;
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    transition: var(--tran-04)
+}
+
+.sidebar li a:hover {
+    background: var(--primary-color);
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text {
+    color: var(--sidebar-color);
+}
+
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text {
+    color: var(--text-color);
+}
+
+.sidebar li a:focus {
+    background: var(--primary-color);
+}
+
+.sidebar li a:focus .text,
+.sidebar li a:focus .icon {
+    color: var(--primary-color-light);
+}
+
+/* dark part */
+
+body.dark .sidebar li a:focus {
+    background: var(--primary-color);
+}
+
+body.dark .sidebar li a:focus .text,
+body.dark .sidebar li a:focus .icon {
+    color: var(--primary-color-light);
+}
+
+.sidebar .menu-bar{
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-bar .mode {
+    position: relative;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+}
+.menu-bar .mode .moon-sun{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu-bar .mode i {
+    position: absolute;
+}
+
+.menu-bar .mode i.sun {
+    opacity: 0;
+}
+
+body.dark .menu-bar .mode i.sun {
+    opacity: 1;
+    transition: var(--tran-03);
+}
+
+body.dark .menu-bar .mode i.moon {
+    opacity: 0;
+}
+
+.menu-bar .mode .toggle-switch {
+    position: absolute;
+    right: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+    cursor: pointer;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+}
+
+.toggle-switch .switch {
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background: var(--toggle-color);
+}
+
+.switch::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background: var(--sidebar-color);
+    transition: var(--tran-03);
+}
+
+body.dark .switch::before {
+    left: 24px;
+}
+
+.home {
+    position: relative;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background: var(--body-color);
+    transition: var(--tran-05);
+    padding: 8px 40px;
+}
+
+.home .Cname{
+    font-size:25px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 8px auto;
+    text-align: center;
+}
+
+.sidebar.close ~ .home{
+    left: 88px;
+    width:calc(100% - 88px);
+}
+
+.nameHeader {
+    width: 500px;
+    height: 40px;
+    position: relative;
+    background: var(--primary-color-light);
+    margin: -20px auto;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 5px 4px #12121258;
+}
+
+.nameHeader.Cname {
+    text-align: center;
+}
+
+.body.dark .nameHeader.Cname{
+    color: var(--primary-color-light);
+}
+
+.mainNav {
+    position: relative;
+    margin: 10px 0px;
+    height: 85vh;
+    width: 100%;
+    transition: var(--tran-05);
+    display: flex;
+    transition: var(--tran-04);
+}
+
+.body.dark .mainNav {
+    color: var(--primary-color-light);
+    
+}
+
+.mainNav .card0 {
+    height: 200px;
+    width: 400px;
+    background-image:linear-gradient(rgb(255, 255, 255),rgb(227, 150, 255));
+    position: relative;
+    margin: 50px 10px 0px ;
+    transition: var(--tran-04);
+    border-radius: 20px;
+    box-shadow: 0px 5px 4px #12121258;
+}
+
+body.dark .mainNav .card0{
+    background:var(--primary-color);
+}
+
+.mainNav .card0 .BGimage{
+    width: 150px;
+    height: 150px;
+    background-image: url(images/reachouts.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0 auto ;
+}
+
+.mainNav .card1 {
+    height: 200px;
+    width: 400px;
+    background:linear-gradient(rgb(255, 255, 255),rgb(155, 242, 255));
+    position: relative;
+    margin: 50px 10px 0px ;
+    transition: var(--tran-04);
+    border-radius: 20px;
+    box-shadow: 0px 5px 4px #12121258;
+}
+
+body.dark .mainNav .card1{
+    background:var(--primary-color);
+}
+
+.mainNav .card1 .BGimage{
+    width: 150px;
+    height: 150px;
+    background-image: url(images/online-booking.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0 auto ;
+}
+
+
+.mainNav .card2 {
+    height: 200px;
+    width: 400px;
+    background:linear-gradient(rgb(255, 255, 255),rgb(250, 255, 98));
+    position: relative;
+    margin: 50px 10px 0px ;
+    transition: var(--tran-04);
+    border-radius: 20px;
+    box-shadow: 0px 5px 4px #12121258;
+}
+
+body.dark .mainNav .card2{
+    background:var(--primary-color);
+}
+
+.mainNav .card2 .BGimage{
+    width: 150px;
+    height: 150px;
+    background-image: url(images/status.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0 auto ;
+}
+
+.mainNav .Cardtext {
+    text-align: center;
+    font-weight: 650;
+    font-size: 25px;
+    color: var(--hover-text-color);
+}
+
+body.dark .mainNav .Cardtext {
+    color: var(--text-color);
+}
+
